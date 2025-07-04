@@ -8,8 +8,11 @@ export const Newsapp = () => {
   const [newsData,setNewsData]=useState(null);
   const [isDarkMode, setIsDarkMode] = useState(false);
 
+  // const API_KEY = import.meta.env.VITE_API_KEY;
+  const API_KEY = import.meta.env.VITE_API_KEY;
+console.log("Loaded API Key:", API_KEY); // ✅ Check if it prints the real key
 
-  const API_KEY= "5084fc697930460483d80b18df989ef1";
+
   const getData= async() =>{
       const response=await fetch(`https://newsapi.org/v2/everything?q=${search}&apiKey=${API_KEY}`);
       const jsonData= await response.json();
@@ -70,8 +73,3 @@ export const Newsapp = () => {
         </div>
   );
 };
-
-
-
-// Your API key is: 5084fc697930460483d80b18df989ef1
-// New APi key is :BDEQnOhByMUHQr_-K8Pcs8h5ijgB5zCXbNjGdrD8HukbWuXD
