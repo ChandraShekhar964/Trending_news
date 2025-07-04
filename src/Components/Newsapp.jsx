@@ -9,7 +9,7 @@ export const Newsapp = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   // const API_KEY = import.meta.env.VITE_API_KEY;
-  const API_KEY = import.meta.env.VITE_API_KEY;
+const API_KEY = import.meta.env.VITE_API_KEY;
 console.log("Loaded API Key:", API_KEY); // ✅ Check if it prints the real key
 
 
