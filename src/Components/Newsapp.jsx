@@ -11,7 +11,7 @@ export const Newsapp = () => {
 
   const API_KEY= "5084fc697930460483d80b18df989ef1";
   const getData= async() =>{
-      const response=await fetch(`https://newsapi.org/v2/everything?q=${search}&apiKey=${API_KEY}`);
+      const response=await fetch(`http://newsapi.org/v2/everything?q=${search}&apiKey=${API_KEY}`);
       const jsonData= await response.json();
       console.log(jsonData.articles);
       setNewsData(jsonData.articles);
