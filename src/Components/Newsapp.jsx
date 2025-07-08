@@ -10,8 +10,9 @@ export const Newsapp = () => {
 
   // const API_KEY = import.meta.env.VITE_API_KEY;
 const API_KEY = import.meta.env.VITE_API_KEY;
+console.log(import.meta.env.VITE_API_KEY);
 console.log("Loaded API Key:", API_KEY); // ✅ Check if it prints the real key
-
+// const API_KEY='018b936809304771bb4148f84246b2b0';
 
   const getData= async() =>{
       const response=await fetch(`https://newsapi.org/v2/everything?q=${search}&apiKey=${API_KEY}`);
